@@ -1,9 +1,9 @@
 import { PureComponent } from "react";
 import { withRouter } from "react-router";
 
-import NotFound from "../NotFound";
+import NotFound from "./NotFound";
 
-import { findById } from "../utils/query";
+import { findById } from "./utils/query";
 
 class Article extends PureComponent {
   state = {

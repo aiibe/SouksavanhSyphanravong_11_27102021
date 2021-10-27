@@ -1,5 +1,6 @@
 import { PureComponent } from "react";
-import { Link } from "react-router-dom";
+import Card from "./components/Card";
+import "./css/Home.css";
 
 import { findAll } from "./utils/query";
 
@@ -14,13 +15,11 @@ class Home extends PureComponent {
 
   render() {
     return (
-      <ul>
+      <div className="listing">
         {this.state.articles.map((a) => (
-          <li>
-            <Link to={`/${a.id}`}>{a.title}</Link>
-          </li>
+          <Card item={a} key={a.id} />
         ))}
-      </ul>
+      </div>
     );
   }
 }
