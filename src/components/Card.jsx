@@ -10,7 +10,7 @@ class Card extends PureComponent {
       <Link to={`/${id}`} className="listing__link" key={id}>
         <article className="listing__card">
           <div className="listing__image">
-            <img src={cover} alt="placeholder image" />
+            <img src={cover} alt="placeholder" />
           </div>
           <h2 className="listing__title">{title}</h2>
         </article>

@@ -15,14 +15,14 @@ function App() {
         <Header />
         <main className="container">
           <Switch>
-            <Route path="/:id">
-              <Article />
-            </Route>
-            <Route path="/about">
+            <Route exact path="/about">
               <About />
             </Route>
             <Route exact path="/">
               <Home />
+            </Route>
+            <Route path="/:id">
+              <Article />
             </Route>
             <Route path="*">
               <NotFound />
