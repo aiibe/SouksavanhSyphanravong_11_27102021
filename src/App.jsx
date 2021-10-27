@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Article from "./components/Article";
 
 import About from "./About";
 import Home from "./Home";
@@ -14,6 +15,9 @@ function App() {
         <Header />
         <main className="container">
           <Switch>
+            <Route path="/:id">
+              <Article />
+            </Route>
             <Route path="/about">
               <About />
             </Route>
