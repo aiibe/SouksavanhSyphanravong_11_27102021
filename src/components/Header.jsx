@@ -7,9 +7,9 @@ import "../css/Header.css";
 class Header extends PureComponent {
   render() {
     return (
-      <nav>
+      <nav className="container">
         <div>
-          <img src={logo} alt="Kasa logo" height={68} />
+          <img className="nav__logo" src={logo} alt="Kasa logo" />
         </div>
         <ul className="menu">
           <li className="menu__link">

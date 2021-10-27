@@ -2,6 +2,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
+}
+
+.nav__logo {
+  height: 47px;
 }
 
 .menu {
