@@ -1,7 +1,8 @@
-import React, { PureComponent } from "react";
+import { PureComponent } from "react";
 import { Link } from "react-router-dom";
-import logo from "./logo.svg";
-import "./css/Header.css";
+
+import logo from "../logo.svg";
+import "../css/Header.css";
 
 class Header extends PureComponent {
   render() {
