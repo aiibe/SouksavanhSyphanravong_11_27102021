@@ -9,7 +9,9 @@ class Header extends PureComponent {
     return (
       <nav className="container">
         <div>
-          <img className="nav__logo" src={logo} alt="Kasa logo" />
+          <Link to="/">
+            <img className="nav__logo" src={logo} alt="Kasa logo" />
+          </Link>
         </div>
         <ul className="menu">
           <li className="menu__link">
