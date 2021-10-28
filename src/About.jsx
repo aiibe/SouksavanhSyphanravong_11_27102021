@@ -12,7 +12,7 @@ class About extends PureComponent {
     return (
       <>
         <div className="feature">
-          <div className="feature__image">
+          <div className="feature__image feature__image--tall">
             <img src={about} alt="mountain view" />
           </div>
         </div>
