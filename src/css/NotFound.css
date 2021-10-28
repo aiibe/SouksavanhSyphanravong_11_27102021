@@ -2,9 +2,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  text-align: center;
+  padding: 50px;
 }
 
-h1 {
-  margin: 40px 0;
+.notfound__message {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.notfound__message h1 {
+  margin: 20px 0;
+  font-size: 96px;
+  font-weight: bold;
+}
+
+.notfound__message p {
+  font-size: 18px;
+}
+
+.notfound__redirect {
+  margin-bottom: 60px;
+  color: inherit;
+}
+
+/* Larger than mobile */
+@media (min-width: 640px) {
+  .notfound__message {
+    margin: 20px 0;
+  }
+
+  .notfound__message h1 {
+    margin: 0;
+    font-size: 288px;
+  }
+  .notfound__message p {
+    font-size: 36px;
+  }
 }
