@@ -10,6 +10,11 @@
 
 .listing__link {
   text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.listing__link:hover {
+  transform: scale(1.02);
 }
 
 .listing__image {
