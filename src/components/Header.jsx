@@ -7,7 +7,7 @@ import "../css/Header.css";
 class Header extends PureComponent {
   render() {
     return (
-      <nav className="container">
+      <nav>
         <div>
           <Link to="/">
             <img className="nav__logo" src={logo} alt="Kasa logo" />
