@@ -16,6 +16,12 @@ nav {
 }
 
 .menu__link {
-  list-style: none;
-  margin-left: 10px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ff6060;
+  font-weight: 500;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
 }

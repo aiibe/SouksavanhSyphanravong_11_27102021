@@ -13,14 +13,15 @@ class Header extends PureComponent {
             <img className="nav__logo" src={logo} alt="Kasa logo" />
           </Link>
         </div>
-        <ul className="menu">
-          <li className="menu__link">
-            <Link to="/">Accueil</Link>
-          </li>
-          <li className="menu__link">
-            <Link to="/about">A Propos</Link>
-          </li>
-        </ul>
+
+        <div className="menu">
+          <Link className="menu__link" to="/">
+            Accueil
+          </Link>
+          <Link className="menu__link" to="/about">
+            A Propos
+          </Link>
+        </div>
       </nav>
     );
   }
