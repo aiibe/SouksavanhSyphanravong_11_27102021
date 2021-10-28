@@ -4,3 +4,13 @@
   gap: 20px;
   margin: 20px 0;
 }
+
+/* Larger than mobile */
+@media (min-width: 640px) {
+  .listing {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+  }
+}
