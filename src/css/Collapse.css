@@ -1,0 +1,45 @@
+.collapse {
+  max-width: 1024px;
+  margin: 20px auto;
+}
+
+.collapse__head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.collapse__head:hover {
+  cursor: pointer;
+}
+
+.collapse__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.collapse__toggle svg {
+  height: 10px;
+  width: 16px;
+}
+
+.collapse__body {
+  height: 0;
+  overflow: hidden;
+}
+
+.collapse__body--expand {
+  background-color: #f6f6f6;
+  height: auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.collapse__text {
+  margin: 0;
+  padding: 10px;
+}
