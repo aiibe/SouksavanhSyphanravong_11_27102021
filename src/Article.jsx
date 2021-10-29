@@ -44,7 +44,7 @@ class Article extends PureComponent {
           </div>
 
           <div className="article__profile">
-            <Rating count={4} />
+            <Rating count={parseInt(article.rating)} />
             <div className="article__host">
               <h3>{article.host.name.replace(" ", "\n")}</h3>
               <img src={article.host.picture} alt={article.host.name} />

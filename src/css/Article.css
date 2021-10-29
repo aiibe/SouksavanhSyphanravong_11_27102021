@@ -20,7 +20,7 @@
   font-weight: 500;
   white-space: pre-wrap;
   text-align: right;
-  margin-right: 10px;
+  margin: 0 10px 0 0;
 }
 
 @media (min-width: 640px) {
