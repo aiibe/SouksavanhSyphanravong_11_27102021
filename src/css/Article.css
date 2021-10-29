@@ -1,0 +1,20 @@
+.article__meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article__profile {
+  text-align: right;
+}
+
+.article__host {
+  display: flex;
+}
+
+@media (min-width: 640px) {
+  .article__details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+  }
+}

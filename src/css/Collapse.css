@@ -1,6 +1,7 @@
 .collapse {
   max-width: 1024px;
   margin: 20px auto;
+  width: 100%;
 }
 
 .collapse__head {
@@ -56,4 +57,5 @@
 .collapse__text {
   margin: 0;
   padding: 10px;
+  white-space: pre-wrap;
 }

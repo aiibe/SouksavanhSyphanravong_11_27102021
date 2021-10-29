@@ -5,5 +5,6 @@ export function findAll() {
 }
 
 export function findById(id) {
-  return data.filter((i) => i.id === id);
+  const filtered = data.filter((i) => i.id === id);
+  return filtered.length === 0 ? null : filtered[0];
 }
