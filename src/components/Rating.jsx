@@ -4,7 +4,7 @@ import "../css/Rating.css";
 class Rating extends PureComponent {
   render() {
     return (
-      <div className="rating">
+      <div className="rating article__rating">
         {[...Array(5)].map((_, i) => (
           <svg
             key={i + "-stars"}

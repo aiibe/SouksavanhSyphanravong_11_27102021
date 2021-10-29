@@ -13,7 +13,7 @@
 .article__host img {
   width: 32px;
   height: 32px;
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
 .article__host h3 {
@@ -38,10 +38,31 @@
   .article__meta {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .article__profile {
-    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  .article__host {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .article__host img {
+    height: 64px;
+    width: 64px;
+  }
+
+  .article__host h3 {
+    font-size: 18px;
+  }
+
+  .article__rating {
+    order: 2;
   }
 
   .article__details {
