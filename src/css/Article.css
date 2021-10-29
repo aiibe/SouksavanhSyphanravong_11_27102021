@@ -1,17 +1,38 @@
-.article__meta {
+.article__profile {
   display: flex;
   justify-content: space-between;
-}
-
-.article__profile {
-  text-align: right;
+  align-items: center;
 }
 
 .article__host {
   display: flex;
+  align-items: center;
+}
+
+.article__host img {
+  width: 32px;
+  height: 32px;
+  border-radius: 25px;
+}
+
+.article__host h3 {
+  font-size: 12px;
+  font-weight: 500;
+  white-space: pre-wrap;
+  text-align: right;
+  margin-right: 10px;
 }
 
 @media (min-width: 640px) {
+  .article__meta {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .article__profile {
+    text-align: right;
+  }
+
   .article__details {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));

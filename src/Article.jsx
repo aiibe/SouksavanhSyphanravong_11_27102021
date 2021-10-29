@@ -5,6 +5,7 @@ import "./css/Article.css";
 import NotFound from "./NotFound";
 import Collapse from "./components/Collapse";
 import { findById } from "./utils/query";
+import Rating from "./components/Rating";
 
 class Article extends PureComponent {
   state = {
@@ -41,14 +42,16 @@ class Article extends PureComponent {
               ))}
             </div>
           </div>
+
           <div className="article__profile">
+            <Rating count={4} />
             <div className="article__host">
-              <h3>{article.host.name}</h3>
+              <h3>{article.host.name.replace(" ", "\n")}</h3>
               <img src={article.host.picture} alt={article.host.name} />
             </div>
-            <div className="article__rating">{article.rating + "stars"}</div>
           </div>
         </div>
+
         <div className="article__details">
           <Collapse
             data={{ title: "Description", text: article.description }}
