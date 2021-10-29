@@ -6,3 +6,10 @@
   height: 15px;
   width: 15px;
 }
+
+@media (min-width: 640px) {
+  .rating svg {
+    height: 30px;
+    width: 30px;
+  }
+}

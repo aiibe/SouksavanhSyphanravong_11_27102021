@@ -4,8 +4,10 @@ import "./css/Article.css";
 
 import NotFound from "./NotFound";
 import Collapse from "./components/Collapse";
-import { findById } from "./utils/query";
 import Rating from "./components/Rating";
+import Tag from "./components/Tag";
+
+import { findById } from "./utils/query";
 
 class Article extends PureComponent {
   state = {
@@ -35,10 +37,8 @@ class Article extends PureComponent {
             <h1 className="article__title">{article.title}</h1>
             <p className="article__location">{article.location}</p>
             <div className="article__tags">
-              {article.tags.map((t) => (
-                <button key={t} className="article__tag">
-                  {t}
-                </button>
+              {article.tags.map((tag) => (
+                <Tag name={tag} key={tag} />
               ))}
             </div>
           </div>
