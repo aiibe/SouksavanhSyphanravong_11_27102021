@@ -1,13 +1,13 @@
 import { PureComponent } from "react";
 import { withRouter } from "react-router";
-import "./css/Article.css";
+import "../css/Article.css";
 
 import NotFound from "./NotFound";
-import Collapse from "./components/Collapse";
-import Rating from "./components/Rating";
-import Tag from "./components/Tag";
+import Collapse from "../components/Collapse";
+import Rating from "../components/Rating";
+import Tag from "../components/Tag";
 
-import { findById } from "./utils/query";
+import { findById } from "../utils/query";
 
 class Article extends PureComponent {
   state = {

@@ -1,6 +1,6 @@
 import { PureComponent } from "react";
 
-import "./css/NotFound.css";
+import "../css/NotFound.css";
 
 class NotFound extends PureComponent {
   render() {

@@ -1,11 +1,11 @@
 import { PureComponent } from "react";
-import "./css/About.css";
-import about from "./about.png";
+import "../css/About.css";
+import about from "../assets/about.png";
 
-import Collapse from "./components/Collapse";
+import Collapse from "../components/Collapse";
 
 // Contents in text
-import AboutText from "./constants/about";
+import AboutText from "../constants/about";
 
 class About extends PureComponent {
   render() {

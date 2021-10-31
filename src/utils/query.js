@@ -1,4 +1,4 @@
-import data from "../data.json";
+import data from "../constants/data.json";
 
 export function findAll() {
   return data;

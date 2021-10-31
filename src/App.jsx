@@ -2,11 +2,11 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Article from "./Article";
 
-import About from "./About";
-import Home from "./Home";
-import NotFound from "./NotFound";
+import Article from "./pages/Article";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
