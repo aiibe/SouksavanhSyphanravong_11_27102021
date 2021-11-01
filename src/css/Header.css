@@ -8,7 +8,7 @@ nav {
 }
 
 .nav__logo {
-  height: 47px;
+  height: 32px;
 }
 
 .menu {
@@ -22,8 +22,19 @@ nav {
   text-decoration: none;
   color: #ff6060;
   font-weight: 500;
+  font-size: 12px;
 }
 
 .menu__link:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  .nav__logo {
+    height: 47px;
+  }
+
+  .menu__link {
+    font-size: 16px;
+  }
 }

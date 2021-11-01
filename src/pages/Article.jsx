@@ -6,9 +6,9 @@ import NotFound from "./NotFound";
 import Collapse from "../components/Collapse";
 import Rating from "../components/Rating";
 import Tag from "../components/Tag";
+import Carousel from "../components/Carousel";
 
 import { findById } from "../utils/query";
-import Carousel from "../components/Carousel";
 
 class Article extends PureComponent {
   state = {

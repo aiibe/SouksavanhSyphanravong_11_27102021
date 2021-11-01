@@ -7,22 +7,22 @@ import "../css/Header.css";
 class Header extends PureComponent {
   render() {
     return (
-      <nav>
-        <div>
+      <header>
+        <nav>
           <Link to="/">
             <img className="nav__logo" src={logo} alt="Kasa logo" />
           </Link>
-        </div>
 
-        <div className="menu">
-          <Link className="menu__link" to="/">
-            Accueil
-          </Link>
-          <Link className="menu__link" to="/about">
-            A Propos
-          </Link>
-        </div>
-      </nav>
+          <div className="menu">
+            <Link className="menu__link" to="/">
+              Accueil
+            </Link>
+            <Link className="menu__link" to="/about">
+              A Propos
+            </Link>
+          </div>
+        </nav>
+      </header>
     );
   }
 }
