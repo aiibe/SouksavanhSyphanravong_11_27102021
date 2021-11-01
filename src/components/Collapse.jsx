@@ -11,11 +11,10 @@ class Collapse extends PureComponent {
   }
 
   render() {
-    const { title, text } = this.props.data;
     return (
       <div className="collapse">
         <div className="collapse__head" onClick={this.toggleContent.bind(this)}>
-          <h2 className="collapse__title">{title}</h2>
+          <h2 className="collapse__title">{this.props.title}</h2>
           <span
             className={
               this.state.expanded
@@ -36,7 +35,7 @@ class Collapse extends PureComponent {
             this.state.expanded ? "collapse__body--expand" : "collapse__body"
           }
         >
-          <p className="collapse__text">{text}</p>
+          <p className="collapse__text">{this.props.text}</p>
         </div>
       </div>
     );

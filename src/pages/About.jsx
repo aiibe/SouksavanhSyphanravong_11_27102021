@@ -19,7 +19,7 @@ class About extends PureComponent {
 
         <div className="about">
           {AboutText.map((item) => (
-            <Collapse data={item} key={item.title} />
+            <Collapse title={item.title} text={item.text} key={item.title} />
           ))}
         </div>
       </>

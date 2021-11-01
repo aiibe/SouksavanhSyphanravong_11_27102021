@@ -57,13 +57,13 @@ class Article extends PureComponent {
 
         <div className="article__details">
           <Collapse
+            title="Description"
+            text={article.description}
             data={{ title: "Description", text: article.description }}
           />
           <Collapse
-            data={{
-              title: "Équipements",
-              text: article.equipments.join("\n"),
-            }}
+          title="Équipements"
+          text={article.description}
           />
         </div>
       </article>
