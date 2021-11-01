@@ -32,7 +32,7 @@ class Article extends PureComponent {
     if (!article) return <NotFound />;
 
     return (
-      <>
+      <article>
         <Carousel images={article.pictures} />
 
         <div className="article__meta">
@@ -66,7 +66,7 @@ class Article extends PureComponent {
             }}
           />
         </div>
-      </>
+      </article>
     );
   }
 }
