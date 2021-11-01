@@ -8,6 +8,7 @@ import Rating from "../components/Rating";
 import Tag from "../components/Tag";
 
 import { findById } from "../utils/query";
+import Carousel from "../components/Carousel";
 
 class Article extends PureComponent {
   state = {
@@ -32,6 +33,8 @@ class Article extends PureComponent {
 
     return (
       <>
+        <Carousel images={article.pictures} />
+
         <div className="article__meta">
           <div>
             <h1 className="article__title">{article.title}</h1>
