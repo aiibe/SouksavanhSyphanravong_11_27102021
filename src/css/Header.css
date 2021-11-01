@@ -25,7 +25,8 @@ nav {
   font-size: 12px;
 }
 
-.menu__link:hover {
+.menu__link:hover,
+.menu__link--active {
   text-decoration: underline;
 }
 

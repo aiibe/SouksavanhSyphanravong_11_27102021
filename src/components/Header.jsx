@@ -1,5 +1,5 @@
 import { PureComponent } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import logo from "../logo.svg";
 import "../css/Header.css";
@@ -14,12 +14,22 @@ class Header extends PureComponent {
           </Link>
 
           <div className="menu">
-            <Link className="menu__link" to="/">
+            <NavLink
+              exact
+              className="menu__link"
+              activeClassName="menu__link--active"
+              to="/"
+            >
               Accueil
-            </Link>
-            <Link className="menu__link" to="/about">
+            </NavLink>
+            <NavLink
+              exact
+              className="menu__link"
+              activeClassName="menu__link--active"
+              to="/about"
+            >
               A Propos
-            </Link>
+            </NavLink>
           </div>
         </nav>
       </header>
