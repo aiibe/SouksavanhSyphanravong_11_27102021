@@ -20,7 +20,7 @@
 .collapse__title {
   margin: 0;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .collapse__toggle svg {
@@ -55,7 +55,15 @@
 }
 
 .collapse__text {
+  font-size: 12px;
   margin: 0;
   padding: 10px;
   white-space: pre-wrap;
+}
+
+@media (min-width: 640px) {
+  .collapse__title,
+  .collapse__text {
+    font-size: 18px;
+  }
 }
