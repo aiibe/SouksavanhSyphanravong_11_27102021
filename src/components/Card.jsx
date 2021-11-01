@@ -1,6 +1,5 @@
 import { PureComponent } from "react";
 import { Link } from "react-router-dom";
-
 import "../css/Card.css";
 
 class Card extends PureComponent {
