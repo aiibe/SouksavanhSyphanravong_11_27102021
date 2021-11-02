@@ -10,7 +10,7 @@ class Home extends PureComponent {
   };
 
   componentDidMount() {
-    this.setState({ articles: findAll() });
+    this.setState({ articles: [...findAll()] });
   }
 
   render() {
