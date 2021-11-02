@@ -1,3 +1,5 @@
+import { PureComponent } from "react";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from "./components/Header";
@@ -8,29 +10,31 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 
-function App() {
-  return (
-    <Router>
-      <Header />
-      <main className="container">
-        <Switch>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/:id">
-            <Article />
-          </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
-      </main>
-      <Footer />
-    </Router>
-  );
+class App extends PureComponent {
+  render() {
+    return (
+      <Router>
+        <Header />
+        <main className="container">
+          <Switch>
+            <Route exact path="/about">
+              <About />
+            </Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/:id">
+              <Article />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+        </main>
+        <Footer />
+      </Router>
+    );
+  }
 }
 
 export default App;
