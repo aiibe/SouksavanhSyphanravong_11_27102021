@@ -1,4 +1,5 @@
 import { PureComponent } from "react";
+import { Link } from "react-router-dom";
 import "../css/NotFound.css";
 
 class NotFound extends PureComponent {
@@ -9,9 +10,9 @@ class NotFound extends PureComponent {
           <h1>404</h1>
           <p>Oups! La page que vous demandez n'existe pas.</p>
         </div>
-        <a className="notfound__redirect" href="/">
+        <Link className="notfound__redirect" to="/">
           Retourner sur la page d’accueil
-        </a>
+        </Link>
       </div>
     );
   }

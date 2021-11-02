@@ -10,6 +10,9 @@ class Home extends PureComponent {
   };
 
   componentDidMount() {
+    /**
+     * Hydrate with all articles
+     */
     this.setState({ articles: [...findAll()] });
   }
 
