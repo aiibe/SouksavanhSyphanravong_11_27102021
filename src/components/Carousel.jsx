@@ -9,7 +9,7 @@ class Carousel extends PureComponent {
   handleNext() {
     this.setState(({ current }) => ({
       current:
-        this.state.current + 1 === this.props.images.length ? 0 : current + 1,
+        this.state.current === this.props.images.length - 1 ? 0 : current + 1,
     }));
   }
 
@@ -24,7 +24,7 @@ class Carousel extends PureComponent {
     return (
       <div className="carousel">
         <div className="carousel__frame">
-          <img src={this.props.images[this.state.current]} alt="" />
+          <img src={this.props.images[this.state.current]} alt="gallery" />
         </div>
 
         {this.props.images.length === 1 ? null : (
