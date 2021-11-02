@@ -56,15 +56,8 @@ class Article extends PureComponent {
         </div>
 
         <div className="article__details">
-          <Collapse
-            title="Description"
-            text={article.description}
-            data={{ title: "Description", text: article.description }}
-          />
-          <Collapse
-          title="Équipements"
-          text={article.description}
-          />
+          <Collapse title="Description" text={article.description} />
+          <Collapse title="Équipements" text={article.description} />
         </div>
       </article>
     );
