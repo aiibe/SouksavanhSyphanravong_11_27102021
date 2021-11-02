@@ -17,6 +17,10 @@ class Article extends PureComponent {
   };
 
   componentDidMount() {
+    /**
+     * Get ID params from URL (withRouter)
+     * Find article by ID
+     */
     const { id } = this.props.match.params;
     this.setState({
       article: findById(id),
@@ -27,8 +31,10 @@ class Article extends PureComponent {
   render() {
     const { fetched, article } = this.state;
 
+    // Loading indicator. Wait for searching article
     if (!fetched) return <p>Loading...</p>;
 
+    // 404 Article not found
     if (!article) return <NotFound />;
 
     return (
