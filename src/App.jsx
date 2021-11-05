@@ -1,4 +1,4 @@
-import { PureComponent } from "react";
+import { Component } from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -10,7 +10,8 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 
-class App extends PureComponent {
+// App wrapper/Router logic
+class App extends Component {
   render() {
     return (
       <Router>

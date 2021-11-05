@@ -1,8 +1,8 @@
-import { PureComponent } from "react";
+import { Component } from "react";
 
 import "../css/Tag.css";
 
-class Tag extends PureComponent {
+class Tag extends Component {
   render() {
     return <button className="tag">{this.props.name}</button>;
   }

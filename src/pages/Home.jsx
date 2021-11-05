@@ -1,10 +1,10 @@
-import { PureComponent } from "react";
+import { Component } from "react";
 import Card from "../components/Card";
 import "../css/Home.css";
 import { findAll } from "../utils/query";
 import feature from "../assets/feature.png";
 
-class Home extends PureComponent {
+class Home extends Component {
   state = {
     articles: [],
   };

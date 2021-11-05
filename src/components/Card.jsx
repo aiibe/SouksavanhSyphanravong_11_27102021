@@ -1,8 +1,8 @@
-import { PureComponent } from "react";
+import { Component } from "react";
 import { Link } from "react-router-dom";
 import "../css/Card.css";
 
-class Card extends PureComponent {
+class Card extends Component {
   render() {
     const { id, title, cover } = this.props.item;
     return (

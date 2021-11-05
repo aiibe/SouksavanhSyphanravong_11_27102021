@@ -1,7 +1,7 @@
-import { PureComponent } from "react";
+import { Component } from "react";
 import "../css/Rating.css";
 
-class Rating extends PureComponent {
+class Rating extends Component {
   render() {
     return (
       <div className="rating article__rating">

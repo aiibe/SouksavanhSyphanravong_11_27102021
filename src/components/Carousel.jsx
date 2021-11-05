@@ -1,7 +1,7 @@
-import { PureComponent } from "react";
+import { Component } from "react";
 import "../css/Carousel.css";
 
-class Carousel extends PureComponent {
+class Carousel extends Component {
   state = {
     current: 0,
   };

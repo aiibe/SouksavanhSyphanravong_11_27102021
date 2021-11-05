@@ -1,4 +1,4 @@
-import { PureComponent } from "react";
+import { Component } from "react";
 import { withRouter } from "react-router";
 import "../css/Article.css";
 
@@ -10,7 +10,7 @@ import Carousel from "../components/Carousel";
 
 import { findById } from "../utils/query";
 
-class Article extends PureComponent {
+class Article extends Component {
   state = {
     article: null,
     fetched: false,
@@ -63,7 +63,7 @@ class Article extends PureComponent {
 
         <div className="article__details">
           <Collapse title="Description" text={article.description} />
-          <Collapse title="Équipements" text={article.description} />
+          <Collapse title="Équipements" text={article.equipments.join("\n")} />
         </div>
       </article>
     );

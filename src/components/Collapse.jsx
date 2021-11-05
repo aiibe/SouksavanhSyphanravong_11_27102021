@@ -1,7 +1,7 @@
-import { PureComponent } from "react";
+import { Component } from "react";
 import "../css/Collapse.css";
 
-class Collapse extends PureComponent {
+class Collapse extends Component {
   state = {
     expanded: false,
   };

@@ -1,4 +1,4 @@
-import { PureComponent } from "react";
+import { Component } from "react";
 import "../css/About.css";
 import about from "../assets/about.png";
 
@@ -7,7 +7,7 @@ import Collapse from "../components/Collapse";
 // Contents in text
 import AboutText from "../constants/about";
 
-class About extends PureComponent {
+class About extends Component {
   render() {
     return (
       <>
